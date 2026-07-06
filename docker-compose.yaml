@@ -22,9 +22,7 @@ services:
       - three-tier-network
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    image: smanoj1215/user_frontend:latest
 
     container_name: node-backend
 
@@ -48,9 +46,7 @@ services:
       - three-tier-network
 
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: smanoj1215/user_backend:latest
 
     container_name: react-frontend
 
