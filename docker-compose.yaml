@@ -22,7 +22,7 @@ services:
       - three-tier-network
 
   backend:
-    image: smanoj1215/user_frontend:latest
+    image: smanoj1215/user_backend:latest
 
     container_name: node-backend
 
@@ -46,7 +46,7 @@ services:
       - three-tier-network
 
   frontend:
-    image: smanoj1215/user_backend:latest
+    image: smanoj1215/user_frontend:latest
 
     container_name: react-frontend
 
