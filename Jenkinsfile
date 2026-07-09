@@ -22,7 +22,7 @@ pipeline {
         stage('Code') {
             steps {
                 echo 'Cloning Repository'
-                git_checkout('main', "https://github.com/smanoj1215/basic_user_management.git")
+                git_checkout("https://github.com/smanoj1215/basic_user_management.git", "main")
             }
         }
     
